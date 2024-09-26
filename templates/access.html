@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head><title>Access User Data</title></head>
+<body>
+    <h1>Access User Data</h1>
+    <form method="post">
+        Admin Password: <input type="password" name="admin_password" required><br>
+        <input type="submit" value="Access">
+    </form>
+    {% if user_data %}
+        <h2>User Data:</h2>
+        <pre>{{ user_data }}</pre>
+    {% endif %}
+    <a href="/">Back to Home</a>
+</body>
+</html>
